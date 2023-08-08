@@ -18,7 +18,8 @@ Kubernetes is a distributed system that consists of two main components: the con
 
 Kubernetes objects are the building blocks of a Kubernetes cluster. They represent different aspects of a running application, such as pods, services, and deployments.
 
-### Pod-related Objects
+### Pod-related Objects 
+[files](Pod_Related_Object/)
 
 - Pod is the smallest unit of execution in Kubernetes. It is a collection of containers that are scheduled and managed together.
 - ReplicationController ensures that a specified number of pods are running at all times.
@@ -31,11 +32,15 @@ Kubernetes objects are the building blocks of a Kubernetes cluster. They represe
 
 ### Service-related Objects
 
+[files](Service_Related_Object/)
+
 - Service exposes a pod or group of pods to the outside world.
 - Endpoints defines a set of IP addresses and ports that are exposed by a service.
 - Ingress is used to route traffic to pods in a cluster.
 
 ### Configuration Objects
+
+[files](Configuration_Object/)
 
 - ConfigMap is a key-value store that can be used to store configuration data.
 - Secret is a secure way to store sensitive data, such as passwords and API keys.
@@ -44,6 +49,8 @@ Kubernetes objects are the building blocks of a Kubernetes cluster. They represe
 
 ### Storage Objects
 
+[files](Storage_Object/)
+
 - PersistentVolume is a piece of storage that is not tied to any specific pod.
 - PersistentVolumeClaim is a request for a PersistentVolume.
 - StorageClass defines the quality of service for a PersistentVolume.
@@ -51,11 +58,15 @@ Kubernetes objects are the building blocks of a Kubernetes cluster. They represe
 
 ### Networking Objects
 
+[files](Networking_Object/)
+
 - NetworkPolicy controls network traffic between pods.
 - ServiceAccount is used to authenticate pods to access
 Kubernetes resources.
 
 ### Monitoring and Logging Objects
+
+[files](Monitoring_and_Logging_Object/)
 
 - PodMetrics provides metrics about pods.
 - Event records events that happen in the cluster.
@@ -63,6 +74,8 @@ Kubernetes resources.
 - CustomMetric allows you to define custom metrics for pods.
 
 ### Policy Objects
+
+[files](Policy_Object/)
 
 - PodSecurityPolicy defines security constraints for pods.
 - PodDisruptionBudget ensures that a certain number of pods in a StatefulSet or Deployment are always running.
@@ -72,6 +85,8 @@ Kubernetes resources.
 
 ### Stateful Application Objects
 
+[files](Stateful_Application_Object/)
+
 - StatefulSet is designed for stateful applications. It ensures that pods are assigned the same identity throughout their lifecycle.
 - PersistentVolume is a piece of storage that is not tied to any specific pod.
 - PersistentVolumeClaim is a request for a PersistentVolume.
@@ -79,10 +94,14 @@ Kubernetes resources.
 
 ### Batch Processing Objects
 
+[files](Bach_Processing_Object/)
+
 - Job is used to run a one-off task.
 - CronJob is used to run a task on a recurring schedule.
 
 ### Control Plane Objects
+
+[files](Control_Plane_Object/)
 
 - Node is a physical or virtual machine that is running Kubernetes.
 - Namespace is a logical grouping of pods, services, and other objects.
