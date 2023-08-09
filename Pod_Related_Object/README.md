@@ -21,13 +21,3 @@ Kubernetes provides a number of objects that can be used to manage Pods, includi
 
 - A Deployment is a higher-level concept that manages ReplicaSets and provides declarative updates to Pods along with a lot of other useful features.
 - Deployments are a higher-level concept that manages ReplicaSets and provides declarative updates to Pods along with a lot of other useful features. Deployments make it easy to update your Pods without having to worry about the details.
-
-## [Job](job.md)
-
-- A Job is a way to run one or more Pods that are guaranteed to succeed or fail as a group.
-- Jobs are a way to run one or more Pods that are guaranteed to succeed or fail as a group. This is useful for running batch jobs, such as data processing or machine learning tasks
-
-## [CronJob](cronjob.md)
-
-- A CronJob is a way to run one or more Pods on a repeating schedule.
-- CronJobs are a way to run one or more Pods on a repeating schedule. This is useful for running tasks that need to be performed on a regular basis, such as backups, report generation, and so on.
