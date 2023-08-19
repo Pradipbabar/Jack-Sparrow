@@ -11,7 +11,7 @@ of required resource of pod creation
 - Controller can manage pod autoscaling, self-healing etc.
 
 ## Example OF Pod Yaml File
-
+```yaml
     apiVersion: v1
     kind: Pod
     metadata:
@@ -21,9 +21,9 @@ of required resource of pod creation
     - name: container1
     image: ubuntu
     command: ["/bin/bash", "-c", "while true; do echo c1; sleep 5 ; done"]
-
+```
 ## Pod Example with annotation
-
+```yaml
     apiVersion: v1
     kind: Pod
     metadata:
@@ -36,9 +36,9 @@ of required resource of pod creation
     image: nginx:1.14.2
     ports:
     - containerPort: 80
-
+```
 ## Pod Example with multiple containers
-
+```yaml
     apiVersion: v1
     kind: Pod
     metadata:
@@ -51,9 +51,10 @@ of required resource of pod creation
     - name: container2
     image: ubuntu
     command: ["/bin/bash", "-c", "while true; do echo c2; sleep 5 ; done"]
+```
 
 ## Pod Example with environment variable
-
+```yaml
     apiVersion: v1
     kind: Pod
     metadata:
@@ -66,6 +67,7 @@ of required resource of pod creation
     env:
     - name: myname
     value: sagar
+```
 
 #### Ceate a pod from yaml file
 
@@ -116,4 +118,4 @@ Command: `kubectl describe pods pod_name`
     kubectl logs my-pod --previous # dump pod logs (stdout) for a previous instantiation of a container
     kubectl logs my-pod -c my-container --previous # dump pod container logs (stdout, multi-container case) 
     for a previous instantiation of a container
-U
+

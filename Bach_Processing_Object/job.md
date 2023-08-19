@@ -5,7 +5,7 @@ Jobs are a way to run one or more Pods that are guaranteed to succeed or fail as
 ## Example
 
 The following is an example of a Kubernetes job that runs a Pod that prints "Hello, world!" to the console:
-
+```yaml
     apiVersion: batch/v1
     kind: Job
     metadata:
@@ -20,6 +20,7 @@ The following is an example of a Kubernetes job that runs a Pod that prints "Hel
                   image: busybox
                   command: ["/bin/echo", "Hello, world!"]
         restartPolicy: Never
+```        
 To create this job, you can use the following command:
 
 `kubectl create -f hello-world.yaml`

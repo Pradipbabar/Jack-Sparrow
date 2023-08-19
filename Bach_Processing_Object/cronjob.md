@@ -5,7 +5,7 @@ CronJobs are a way to run one or more Pods on a repeating schedule. They are oft
 ## Example
 
 The following is an example of a Kubernetes CronJob that runs a Pod that prints "Hello, world!" to the console every minute:
-
+```yaml
     apiVersion: batch/v1beta1
     kind: CronJob
     metadata:
@@ -23,6 +23,7 @@ The following is an example of a Kubernetes CronJob that runs a Pod that prints 
                       image: busybox
                       command: ["/bin/echo", "Hello, world!"]
     restartPolicy: Never
+```
 
 To create this CronJob, you can use the following command:
 

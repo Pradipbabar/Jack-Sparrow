@@ -21,20 +21,21 @@ production, refer a product group like Deployment A, Deployment B
   - Kubectl label pod{object} object_name env=dev
 
 ### Example of Declarative
-
+```yaml
     apiVersion: v1
     kind: Pod
     metadata:
-    name: label-demo
-    labels:
-    environment: production
-    app: nginx
-    spec:
-    containers:
-    - name: nginx
-    image: nginx:1.14.2
-    ports:
-    - containerPort: 80
+        name: label-demo
+        labels:
+            environment: production
+        app: nginx
+        spec:
+            containers:
+            - name: nginx
+              image: nginx:1.14.2
+              ports:
+            - containerPort: 80
+```    
 Command:
 
 1. Kubectl get pods{object} --show-labels
@@ -66,14 +67,15 @@ primitive in Kubernetes.
 node to have. Kubernetes only schedules the Pod onto nodes that have each of the labels you specify.
 
 #### Example
-
+```yaml
     apiVersion: v1
     kind: Pod
     metadata:
-    name: nginx
-    spec:
-    containers:
-    - name: nginx
-    image: nginx
-    nodeSelector:
-    nodename: minikubenod
+        name: nginx
+        spec:
+            containers:
+                - name: nginx
+                  image: nginx
+                  nodeSelector:
+                    nodename: minikubenod
+```

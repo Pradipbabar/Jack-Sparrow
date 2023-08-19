@@ -72,6 +72,7 @@ to some of the following factors:
 
 ## Example
 
+```yaml
     apiVersion: apps/v1
     kind: Deployment
     metadata:
@@ -92,6 +93,7 @@ to some of the following factors:
             - name: ubuntu
               image: ubuntu:20.04
               command: ["/bin/bash", "-c", "while true; do echo 'hello sagar'; sleep 5; done"]
+```
 
 ### Updating a Deployment
 

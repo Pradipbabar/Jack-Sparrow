@@ -30,7 +30,7 @@ custom update orchestration or don't require updates at all.
 Deployment instead, and define your application in the spec section
 
 ## Example
-
+```yaml
     apiVersion: apps/v1
     kind: ReplicaSet
     metadata:
@@ -52,3 +52,4 @@ Deployment instead, and define your application in the spec section
                 containers:
                 - name: php-redis
                   image: gcr.io/google_samples/gb-frontend:v3
+```

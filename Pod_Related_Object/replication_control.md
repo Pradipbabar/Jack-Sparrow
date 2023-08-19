@@ -29,7 +29,7 @@ configuration.
 - You can run the RC with 1 replica & the RC make sure that pod is always running.
 
 ### Example
-
+```yaml
     apiVersion: v1
     kind: ReplicationController
     metadata:
@@ -48,6 +48,7 @@ configuration.
                 - name: rcpod
                   image: ubuntu
                   command: ["/bin/bash", "-c", "while true; do echo c1; sleep 5 ; done"]
+```
 
 Interactive method to scaleup and scale down number of pods from RC
 
