@@ -1,6 +1,8 @@
 
 # Networking Object
 
+
+
 1. ## [**Service Account:**](service_account.md)
    A **Service Account** is a Kubernetes object that provides an identity for processes (pods) to interact with the Kubernetes API and other resources. It allows pods to authenticate and authorize themselves when accessing other services, secrets, or resources within the cluster.
 
